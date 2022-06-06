@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ChildComponent implements OnInit {
 
 
-  userName=''
+  userName='';
+  count=0;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +19,9 @@ export class ChildComponent implements OnInit {
    console.log( val );
    this.userName=val;
    
+ }
+ counter():void{
+   this.count++;
  }
 
 }

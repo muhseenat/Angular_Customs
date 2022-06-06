@@ -2,12 +2,12 @@
 <div class="container mt-5">
   <input type="text" class="form-control" [(ngModel)]="filteredString" >
   <p *ngFor="let  i of members | filter:filteredString" (mouseover)="callChild(i)">{{i}}</p>
-  <!-- <button type="button" (click)="callChild(i)">Call Child</button> -->
+  <button type="button" class="btn-primary" (click)="child.counter()">Call Child</button>
 </div>
 <hr>
 
 
 <div class="container">
   <h3>Child Component</h3>
-  <app-child></app-child>
+  <app-child #child></app-child>
 </div>
