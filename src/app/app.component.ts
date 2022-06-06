@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  filteredString:string='';
+  members=['rono','messi','hazard','ozil']
 
 }
