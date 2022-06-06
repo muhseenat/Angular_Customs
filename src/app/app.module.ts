@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoldDirective } from './bold.directive';
 import { FilterPipe } from './filter.pipe';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoldDirective,
-    FilterPipe
+    FilterPipe,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

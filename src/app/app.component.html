@@ -1,5 +1,13 @@
 <div class="container text-align-center mt-5"  appBold>Here the custom Directive is worked</div>
 <div class="container mt-5">
-  <input type="text" class="form-control" [(ngModel)]="filteredString">
-  <p *ngFor="let  i of members | filter:filteredString">{{i}}</p>
+  <input type="text" class="form-control" [(ngModel)]="filteredString" >
+  <p *ngFor="let  i of members | filter:filteredString" (mouseover)="callChild(i)">{{i}}</p>
+  <!-- <button type="button" (click)="callChild(i)">Call Child</button> -->
+</div>
+<hr>
+
+
+<div class="container">
+  <h3>Child Component</h3>
+  <app-child></app-child>
 </div>
